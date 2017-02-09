@@ -15,7 +15,6 @@ class ReuseCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
         
     }
 

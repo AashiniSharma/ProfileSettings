@@ -24,7 +24,6 @@ class MainProfileSettingsVC: UIViewController {
                                         ["title" : "HEIGHT", "values" : "6'0\""],
                                         ["title" : "WEIGHT", "values" : "155 lbs"]]
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -46,8 +45,7 @@ class MainProfileSettingsVC: UIViewController {
     {
         super.didReceiveMemoryWarning()
     }
-    
-    
+   
     //MARK: private method
    @objc private func hideKeyboard()
     {
@@ -125,28 +123,18 @@ class MainProfileSettingsVC: UIViewController {
             }
         
     }
-    
-    
-    
-//    //function for persistent data
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
-//    {
-//        if editingStyle == .delete
-//        {
-//           dataDict.remove(at: indexPath.row)
-//           tableView.deleteRows(at: [indexPath], with: .fade)
-//        }
-//         else if editingStyle == .insert
-//        {
-//        let newCell = tableView.dequeueReusableCell(withIdentifier: "ReuseCellID", for: indexPath) as! ReuseCell
-//            newCell.informationTF.text = dataDict[indexPath.row-1]["values"]
-//            tableView.insertRows(at: [indexPath], with: .none)
-//        
-//        }
-//       
-//    }
-//
+        
+        // data persistent function
+        func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath)  {
+            if indexPath.row != 0 && indexPath.row != dataDict.count+1 {
                 
+                let cell = tableView.cellForRow(at: indexPath) as! ReuseCell
+                dataDict[indexPath.row-1]["values"] = cell.informationTF.text
+                
+            }
+
+        }
+    
         
     }
 

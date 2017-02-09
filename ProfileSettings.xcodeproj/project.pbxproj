@@ -11,8 +11,6 @@
 		0C2616F01E4AE02100F15430 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2616EE1E4AE02100F15430 /* Main.storyboard */; };
 		0C2616F21E4AE02100F15430 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C2616F11E4AE02100F15430 /* Assets.xcassets */; };
 		0C2616F51E4AE02100F15430 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C2616F31E4AE02100F15430 /* LaunchScreen.storyboard */; };
-		0C2617001E4AE02100F15430 /* ProfileSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2616FF1E4AE02100F15430 /* ProfileSettingsTests.swift */; };
-		0C26170B1E4AE02100F15430 /* ProfileSettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C26170A1E4AE02100F15430 /* ProfileSettingsUITests.swift */; };
 		0C2617191E4AED0E00F15430 /* MainProfileSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2617181E4AED0E00F15430 /* MainProfileSettingsVC.swift */; };
 		0C26171C1E4B4F4200F15430 /* ReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C26171A1E4B4F4200F15430 /* ReuseCell.swift */; };
 		0C26171D1E4B4F4200F15430 /* ReuseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C26171B1E4B4F4200F15430 /* ReuseCell.xib */; };
@@ -43,11 +41,7 @@
 		0C2616F41E4AE02100F15430 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C2616F61E4AE02100F15430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C2616FB1E4AE02100F15430 /* ProfileSettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileSettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C2616FF1E4AE02100F15430 /* ProfileSettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTests.swift; sourceTree = "<group>"; };
-		0C2617011E4AE02100F15430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C2617061E4AE02100F15430 /* ProfileSettingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProfileSettingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C26170A1E4AE02100F15430 /* ProfileSettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsUITests.swift; sourceTree = "<group>"; };
-		0C26170C1E4AE02100F15430 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C2617181E4AED0E00F15430 /* MainProfileSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainProfileSettingsVC.swift; sourceTree = "<group>"; };
 		0C26171A1E4B4F4200F15430 /* ReuseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseCell.swift; sourceTree = "<group>"; };
 		0C26171B1E4B4F4200F15430 /* ReuseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReuseCell.xib; sourceTree = "<group>"; };
@@ -82,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				0C2616E91E4AE02100F15430 /* ProfileSettings */,
-				0C2616FE1E4AE02100F15430 /* ProfileSettingsTests */,
-				0C2617091E4AE02100F15430 /* ProfileSettingsUITests */,
 				0C2616E81E4AE02100F15430 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,24 +103,6 @@
 				0C2616F61E4AE02100F15430 /* Info.plist */,
 			);
 			path = ProfileSettings;
-			sourceTree = "<group>";
-		};
-		0C2616FE1E4AE02100F15430 /* ProfileSettingsTests */ = {
-			isa = PBXGroup;
-			children = (
-				0C2616FF1E4AE02100F15430 /* ProfileSettingsTests.swift */,
-				0C2617011E4AE02100F15430 /* Info.plist */,
-			);
-			path = ProfileSettingsTests;
-			sourceTree = "<group>";
-		};
-		0C2617091E4AE02100F15430 /* ProfileSettingsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0C26170A1E4AE02100F15430 /* ProfileSettingsUITests.swift */,
-				0C26170C1E4AE02100F15430 /* Info.plist */,
-			);
-			path = ProfileSettingsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2617001E4AE02100F15430 /* ProfileSettingsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C26170B1E4AE02100F15430 /* ProfileSettingsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
